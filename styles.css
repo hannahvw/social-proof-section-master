@@ -1,7 +1,6 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -29,7 +28,6 @@ body {
 .review-container {
     max-width: 375px;
     margin: 0 auto;
-    outline: 2px solid salmon;
     padding: 50px 0 50px;
 }
 
@@ -91,4 +89,9 @@ p {
   color: var(--color-neutral-light);
   border-radius: 5px;
   padding: 10px;
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 15%;
 }
