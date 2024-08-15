@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -12,15 +13,82 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary-dark: hsl(300, 43%, 22%);
+  --color-primary-light: hsl(333, 80%, 67%);
+  --color-neutral-dark: hsl(303, 10%, 53%);
+  --color-neutral-light: hsl(300, 24%, 96%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+}
+
 body {
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
 }
 
-:root {
-    --color-primary-dark: hsl(300, 43%, 22%);
-    --color-primary-light: hsl(333, 80%, 67%);
-    --color-neutral-dark: hsl(303, 10%, 53%);
-    --color-neutral-light: hsl(300, 24%, 96%);
-    --color-neutral-white: hsl(0, 0%, 100%);
+.review-container {
+    max-width: 375px;
+    margin: 0 auto;
+    outline: 2px solid salmon;
+    padding: 50px 0 50px;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin: 0 auto 15px;
+    text-align: center;
+    max-width: 50%;
+    line-height: 0.8;
+}
+
+p {
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto 20px;
+    line-height: 1.2;
+}
+
+.rating-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto 25px;
+}
+
+.rating-card {
+  background-color: var(--color-neutral-light);
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.rating-card p {
+    margin-bottom: 0;
+}
+
+.stars {
+    display: flex;
+    gap: 7px;
+}
+
+.review-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.review-card {
+  background-color: var(--color-primary-dark);
+  color: var(--color-neutral-light);
+  border-radius: 5px;
+  padding: 10px;
 }
