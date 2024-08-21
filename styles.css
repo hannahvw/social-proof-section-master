@@ -125,10 +125,23 @@ p {
 }
 
 @media screen and (min-width: 780px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+  }
+
   .review-container {
     max-width: 1200px;
     position: relative;
-    margin-top: 100px;
+    padding: 0;
   }
   .heading {
     font-size: 3rem;
