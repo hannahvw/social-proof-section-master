@@ -126,26 +126,39 @@ p {
 
 @media screen and (min-width: 780px) {
   .review-container {
-    max-width: 1000px;
+    max-width: 1200px;
+    position: relative;
+    margin-top: 100px;
   }
   .heading {
     font-size: 3rem;
     text-align: left;
     margin: 0 50px;
+    max-width: 30%;
   }
 
   .overview {
     text-align: left;
     opacity: 0.6;
     font-size: 1.2rem;
-    margin: 30px 50px;
-    max-width: 60%;
+    margin: 30px 50px 50px;
+    max-width: 40%;
+  }
+
+  .rating-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 25px) repeat(3, 350px) repeat(3, 25px);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 500px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
   }
 
   .rating-card {
     display: flex;
     flex-direction: row;
-    max-width: 425px;
+    width: 400px;
     padding-left: 40px;
   }
 
@@ -154,13 +167,15 @@ p {
   }
 
   .review-cards-container {
+    max-width: 1200px;
+    margin: 0 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 5px) repeat(1, 175px) repeat(3, 5px);
   }
 
   .review-card {
-    width: 350px;
+    max-width: 350px;
   }
 
   .one {
