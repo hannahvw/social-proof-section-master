@@ -41,10 +41,14 @@ body {
   line-height: 0.8;
 }
 
-p {
+.overview {
   text-align: center;
   max-width: 75%;
   margin: 0 auto 20px;
+  line-height: 1.2;
+}
+
+p {
   line-height: 1.2;
 }
 
@@ -100,14 +104,15 @@ p {
 
 .name {
   font-weight: 600;
-  margin-left: 10px;
   margin-top: -50px;
+  text-align: center;
+  margin-left: -75px;
 }
 
 .position {
   color: var(--color-primary-light);
-  margin-top: -20px;
-  margin-left: 10px;
+  text-align: center;
+  margin-left: -75px;
 }
 
 .review {
@@ -117,5 +122,62 @@ p {
 
 .review p {
   text-align: left;
-  margin: 0;
+}
+
+@media screen and (min-width: 780px) {
+  .review-container {
+    max-width: 1000px;
+  }
+  .heading {
+    font-size: 3rem;
+    text-align: left;
+    margin: 0 50px;
+  }
+
+  .overview {
+    text-align: left;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    margin: 30px 50px;
+    max-width: 60%;
+  }
+
+  .rating-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 425px;
+    padding-left: 40px;
+  }
+
+  .stars {
+    padding-right: 20px;
+  }
+
+  .review-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 5px) repeat(1, 175px) repeat(3, 5px);
+  }
+
+  .review-card {
+    width: 350px;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: -3;
+  }
+
+  .two {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: -2;
+  }
+
+  .three {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: -1;
+  }
 }
